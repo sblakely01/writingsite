@@ -1,52 +1,159 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import background from '../public/WebsitePicture1.png';
+import Typewriter from 'typewriter-effect';
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Alt Nerd Noir</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
 
-        <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <main className={styles.main}>
+      <div className={styles.toolBar}>
+        <div className={styles.navbarItems}>
+        <p className={styles.title}>
+            Alt Nerd Noir
+          </p>
+        <img src="/Icon.png"/>
         </div>
+
+      <div className={styles.navbarItemsRight}>
+      <a style={{width: '40px', height: '40px' }} href="https://nextjs.org/docs" >
+        <img style={{width: '40px', height: '40px' }} src="/instagram-logo.png"/>
+            </a>
+      <a style={{width: '40px', height: '40px' }} href="https://nextjs.org/docs" >
+        <img style={{width: '25px', height: '25px' }} src="/youtube.png"/>
+            </a>
+      <a style={{width: '40px', height: '40px' }} href="https://nextjs.org/docs" >
+        <img style={{width: '25px', height: '25px' }} src="/tik-tok.png"/>
+            </a>
+      </div>
+      </div>
+      <div className={styles.navBar}>
+      <a href="https://nextjs.org/docs" >
+        <h3>Contact</h3>
+            </a>
+            <div className={styles.navSpacer}></div>
+            <a href="https://nextjs.org/docs" >
+        <h3>About</h3>
+            </a>
+            <div className={styles.navSpacer}></div>
+            <a href="https://nextjs.org/docs" >
+        <h3>FAQ</h3>
+            </a>
+            <div className={styles.navSpacer}></div>
+            </div>
+          <div className={styles.container}>
+
+            <div className={styles.image}>
+          <img style={{ backgroundImage: `url(${background.src})`, backgroundSize: 'cover', width: 'inherit' }} src="./WebsitePicture1.png" layout='fill' />
+          </div>
+          <div className={styles.writingText}>
+            <Typewriter
+              options={{
+                loop: true,
+              }}
+  onInit={(typewriter) => {
+    typewriter.typeString('The fire flickered and faded more, threatening further to plunge Rumern into darkness...')
+      .callFunction(() => {
+        console.log('String typed out!');
+      })
+      .pauseFor(2500)
+      .deleteAll()
+      .callFunction(() => {
+        console.log('All strings were deleted');
+      })
+      .typeString(`...but that night, she went into the Shadow's Emissary seemingly alone with the intention to gamble big and win even bigger`)
+      .callFunction(() => {
+        console.log('String typed out!');
+      })
+      .pauseFor(2500)
+      .deleteAll()
+      .callFunction(() => {
+        console.log('All strings were deleted');
+      })
+      .typeString(`For eight years, the fires raged in Viernon...`)
+      .callFunction(() => {
+        console.log('String typed out!');
+      })
+      .pauseFor(2500)
+      .deleteAll()
+      .callFunction(() => {
+        console.log('All strings were deleted');
+      })
+      .typeString(`Hundreds of tiny images appeared in front of Daelah and as they faded into view, she realized that they were all faces that were laid out before her like cards scattered on a table...`)
+      .callFunction(() => {
+        console.log('String typed out!');
+      })
+      .pauseFor(2500)
+      .deleteAll()
+      .start();
+  }}
+/>
+</div>
+          </div>
+          <div className={styles.container}>
+          <div className={styles.grid}>
+            <a href="https://nextjs.org/docs" className={styles.card}>
+              <div className={styles.cardText}>
+              <h3>AI Art &rarr;</h3>
+              <p></p>
+              </div>
+              <img 
+                alt="Card background"
+                className="z-0 w-full h-full object-cover"
+                src="./AiArtBackground.png"
+              />
+            </a>
+
+            <a href="https://nextjs.org/learn" className={styles.card}>
+            <div className={styles.cardText}>
+              <h3>Iridis Stories &rarr;</h3>
+              <p></p>
+              </div>
+              <img 
+                alt="Card background"
+                className="z-0 w-full h-full object-cover"
+                src="./IridisBackground.png"
+              />
+            </a>
+
+            <a
+              href="https://github.com/vercel/next.js/tree/canary/examples"
+              className={styles.card}
+            >
+              <div className={styles.cardText}>
+              <h3>Writing Blog &rarr;</h3>
+              <p></p>
+              </div>
+              <img 
+                alt="Card background"
+                className="z-0 w-full h-full object-cover"
+                src="./BlogBackground.png"
+              />
+            </a>
+
+            <a
+              href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+              className={styles.card}
+            >
+              <div className={styles.cardText}>
+              <h3>Archives &rarr;</h3>
+              <p>
+              </p>
+              </div>
+              <img 
+                alt="Card background"
+                className="z-0 w-full h-full object-cover"
+                src="./ArchiveBackground.png"
+              />
+            </a>
+            </div>
+            </div>
       </main>
 
       <footer>
@@ -62,7 +169,7 @@ export default function Home() {
 
       <style jsx>{`
         main {
-          padding: 5rem 0;
+          padding: 0rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
