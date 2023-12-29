@@ -19,6 +19,7 @@
   min-width: 100%;
   position: relative;
   overflow-x: hidden;
+  background-color: black;
 }
 
 .navbarItems {
@@ -35,6 +36,10 @@
   position: relative;
   overflow-y: hidden;
   text-align: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .navSpacer {
@@ -67,7 +72,7 @@
   text-align: center;
   left: 0;
   font-family: 'CallingAngels' ;
-  color: black;
+  color: white;
 }
 
 .cardText {

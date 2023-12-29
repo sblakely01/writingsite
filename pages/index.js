@@ -2,6 +2,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import background from '../public/WebsitePicture1.png';
 import Typewriter from 'typewriter-effect';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
 
       <div className={styles.navbarItemsRight}>
       <a style={{width: '40px', height: '40px' }} href="https://nextjs.org/docs" >
-        <img style={{width: '40px', height: '40px' }} src="/instagram-logo.png"/>
+        <img style={{width: '25px', height: '25px' }} src="/instagram-logo.png"/>
             </a>
       <a style={{width: '40px', height: '40px' }} href="https://nextjs.org/docs" >
         <img style={{width: '25px', height: '25px' }} src="/youtube.png"/>
@@ -34,17 +35,17 @@ export default function Home() {
       </div>
       </div>
       <div className={styles.navBar}>
-      <a href="https://nextjs.org/docs" >
+      <Link href="/contact"> 
         <h3>Contact</h3>
-            </a>
+            </Link>
             <div className={styles.navSpacer}></div>
-            <a href="https://nextjs.org/docs" >
+            <Link href="/about"> 
         <h3>About</h3>
-            </a>
+            </Link>
             <div className={styles.navSpacer}></div>
-            <a href="https://nextjs.org/docs" >
+            <Link href="/faq"> 
         <h3>FAQ</h3>
-            </a>
+            </Link>
             <div className={styles.navSpacer}></div>
             </div>
           <div className={styles.container}>
