@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import styles from '../styles/Contact.module.css';
+import styles from '../styles/About.module.css';
 import Link from 'next/link';
 
 export default function Home() {
@@ -45,6 +45,11 @@ export default function Home() {
         <h3>Home</h3>
             </Link>
               <div className={styles.navSpacer}></div>
+              </div>
+              <div className={styles.aboutContainer}>
+                  <p classname={styles.aboutText}>
+                      Coming soon!
+                  </p>
               </div>
 
               </main>
