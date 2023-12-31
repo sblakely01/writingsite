@@ -3,7 +3,7 @@ import styles from '../styles/About.module.css';
 import Link from 'next/link';
 import Typewriter from 'typewriter-effect';
 
-export default function Home() {
+export default function About() {
     return (
       <div className={styles.container}>
         <Head>

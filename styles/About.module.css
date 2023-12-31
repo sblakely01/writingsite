@@ -83,6 +83,16 @@
     padding-top: 50px;
   }
 
+  .header {
+    text-align: center;
+    left: 0;
+    font-family: 'CallingAngels' ;
+    color: white;
+    font-size: 3.6rem;
+    line-height: 1.15;
+    padding-top: 50px;
+  }
+
   .title,
 .description {
   text-align: center;

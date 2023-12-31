@@ -1,16 +1,25 @@
 import Head from 'next/head';
 import styles from '../styles/About.module.css';
 import Link from 'next/link';
+import LightGallery from 'lightgallery/react';
 
-export default function FAQ() {
+import lgThumbnail from 'lightgallery/plugins/thumbnail';
+import lgZoom from 'lightgallery/plugins/zoom';
+
+import 'lightgallery/css/lightgallery.css';
+import 'lightgallery/css/lg-zoom.css';
+import 'lightgallery/css/lg-thumbnail.css';
+
+export default function AIArtGallery() {
     return (
       <div className={styles.container}>
         <Head>
           <title>Alt Nerd Noir</title>
           <link rel="icon" href="/favicon.ico" />
+          <link type="text/css" rel="stylesheet" href="css/lightgallery-bundle.css" />
         </Head>
-  
-  
+
+    <script src="js/plugins/lg-zoom.umd.js"></script>
         <main className={styles.main}>
         <div className={styles.toolBar}>
           <div className={styles.navbarItems}>
@@ -33,6 +42,10 @@ export default function FAQ() {
         </div>
         </div>
         <div className={styles.navBar}>
+        <Link href="/"> 
+        <h3>Home</h3>
+            </Link>
+              <div className={styles.navSpacer}></div>
         <Link href="/contact"> 
           <h3>Contact</h3>
               </Link>
@@ -41,17 +54,72 @@ export default function FAQ() {
         <h3>About</h3>
             </Link>
               <div className={styles.navSpacer}></div>
-              <Link href="/"> 
-        <h3>Home</h3>
+              <Link href="/faq"> 
+        <h3>FAQ</h3>
             </Link>
-              <div className={styles.navSpacer}></div>
+            <div className={styles.navSpacer}></div>
               </div>
               <div className={styles.aboutContainer}>
                   <p className={styles.header}>
-                      Coming soon!
+                      Art Gallery
                   </p>
+                  <LightGallery
+          mode="lg-fade"
+          speed={500}
+          plugins={[lgThumbnail, lgZoom]}
+        >
+          <a
+            className="gallery-item"
+            data-src="https://i.ibb.co/9nRB6gm/image-2023-12-25-T233803-769.png"
+            data-sub-html="<h4>Commision for Dira Khali </h4>"
+          >
+            <img
+              className="img-responsive"
+              src="https://i.ibb.co/d5J9d6P/image-2023-12-25-T233803-769.png"
+            />
+          </a>
+          <a
+            className="gallery-item"
+            data-src="https://i.ibb.co/x7CnKLV/image-2023-12-26-T044835-569.png"
+            data-sub-html="<h4>Commision for Dira Khali </h4>"
+          >
+            <img
+              className="img-responsive"
+              src="https://i.ibb.co/VWCPytQ/image-2023-12-26-T044835-569.png"
+            />
+          </a>
+          <a
+            className="gallery-item"
+            data-src="https://i.ibb.co/Y2gCqfr/image-2023-12-26-T034001-335.png"
+            data-sub-html="<h4>Commision for Dira Khali </h4>"
+          >
+            <img
+              className="img-responsive"
+              src="https://i.ibb.co/k9V5SS0/image-2023-12-26-T034001-335.png"
+            />
+          </a>
+          <a
+            className="gallery-item"
+            data-src="https://i.ibb.co/J7T1Cvc/image-2023-12-26-T013624-066.png"
+            data-sub-html="<h4>Commision for Dira Khali </h4>"
+          >
+            <img
+              className="img-responsive"
+              src="https://i.ibb.co/vzQLs2J/image-2023-12-26-T013624-066.png"
+            />
+          </a>
+          <a
+            className="gallery-item"
+            data-src="https://i.ibb.co/LPqy8Ws/image-2023-12-30-T013105-776.png"
+            data-sub-html="<h4>Commision</h4>"
+          >
+            <img
+              className="img-responsive"
+              src="https://i.ibb.co/VYmwKk8/image-2023-12-30-T013105-776.png"
+            />
+          </a>
+        </LightGallery>
               </div>
-
               </main>
 
               <footer>

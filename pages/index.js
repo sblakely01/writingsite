@@ -10,6 +10,7 @@ export default function Home() {
       <Head>
         <title>Alt Nerd Noir</title>
         <link rel="icon" href="/favicon.ico" />
+
       </Head>
 
 
@@ -68,7 +69,7 @@ export default function Home() {
       .callFunction(() => {
         console.log('All strings were deleted');
       })
-      .typeString(`...but that night, she went into the Shadow's Emissary seemingly alone with the intention to gamble big and win even bigger`)
+      .typeString(`...but that night, she went into the Shadow's Emissary seemingly alone with the intention to gamble big and win even bigger.`)
       .callFunction(() => {
         console.log('String typed out!');
       })
@@ -83,15 +84,6 @@ export default function Home() {
       })
       .pauseFor(2500)
       .deleteAll()
-      .callFunction(() => {
-        console.log('All strings were deleted');
-      })
-      .typeString(`Hundreds of tiny images appeared in front of Daelah and as they faded into view, she realized that they were all faces that were laid out before her like cards scattered on a table...`)
-      .callFunction(() => {
-        console.log('String typed out!');
-      })
-      .pauseFor(2500)
-      .deleteAll()
       .start();
   }}
 />
@@ -99,7 +91,7 @@ export default function Home() {
           </div>
           <div className={styles.container}>
           <div className={styles.grid}>
-            <a href="https://nextjs.org/docs" className={styles.card}>
+            <Link href="/aiartgallery" className={styles.card}>
               <div className={styles.cardText}>
               <h3>AI Art &rarr;</h3>
               <p></p>
@@ -109,9 +101,9 @@ export default function Home() {
                 className="z-0 w-full h-full object-cover"
                 src="./AiArtBackground.png"
               />
-            </a>
+            </Link>
 
-            <a href="https://nextjs.org/learn" className={styles.card}>
+            <Link href="/iridis" className={styles.card}>
             <div className={styles.cardText}>
               <h3>Iridis Stories &rarr;</h3>
               <p></p>
@@ -121,10 +113,10 @@ export default function Home() {
                 className="z-0 w-full h-full object-cover"
                 src="./IridisBackground.png"
               />
-            </a>
+            </Link>
 
-            <a
-              href="https://github.com/vercel/next.js/tree/canary/examples"
+            <Link
+              href="/blog"
               className={styles.card}
             >
               <div className={styles.cardText}>
@@ -136,9 +128,9 @@ export default function Home() {
                 className="z-0 w-full h-full object-cover"
                 src="./BlogBackground.png"
               />
-            </a>
+            </Link>
 
-            <a
+            {/* <a
               href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
               className={styles.card}
             >
@@ -152,7 +144,7 @@ export default function Home() {
                 className="z-0 w-full h-full object-cover"
                 src="./ArchiveBackground.png"
               />
-            </a>
+            </a> */}
             </div>
             </div>
       </main>

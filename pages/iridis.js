@@ -2,7 +2,7 @@ import Head from 'next/head';
 import styles from '../styles/About.module.css';
 import Link from 'next/link';
 
-export default function FAQ() {
+export default function Iridis() {
     return (
       <div className={styles.container}>
         <Head>
@@ -33,6 +33,10 @@ export default function FAQ() {
         </div>
         </div>
         <div className={styles.navBar}>
+        <Link href="/"> 
+        <h3>Home</h3>
+            </Link>
+              <div className={styles.navSpacer}></div>
         <Link href="/contact"> 
           <h3>Contact</h3>
               </Link>
@@ -41,10 +45,10 @@ export default function FAQ() {
         <h3>About</h3>
             </Link>
               <div className={styles.navSpacer}></div>
-              <Link href="/"> 
-        <h3>Home</h3>
+              <Link href="/faq"> 
+        <h3>FAQ</h3>
             </Link>
-              <div className={styles.navSpacer}></div>
+            <div className={styles.navSpacer}></div>
               </div>
               <div className={styles.aboutContainer}>
                   <p className={styles.header}>
