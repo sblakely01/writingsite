@@ -10,17 +10,15 @@
 
 
 .container {
-  min-height: 100vh;
   padding: 0 0rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  min-width: 100%;
   position: relative;
   overflow-x: hidden;
   background-color: black;
   max-width: 100%;
+  justify-content: center;
 }
 
 .navbarItems {
@@ -43,8 +41,12 @@
   justify-content: flex-end;
 }
 
-.navSpacer {
-  width: 125px;
+.textBarItems {
+  padding-right: 25px;
+  display: flex;
+  align-items: flex-end;
+  min-width: 100%;
+  justify-content: space-evenly;
 }
 
 .main {
@@ -66,7 +68,7 @@
 .title {
   margin: 1rem;
   line-height: 1.15;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 .title {
@@ -83,11 +85,9 @@
 
 .writingText {
   position: absolute;
-  left: 500px;
-  bottom: 750px;
   font-family: 'ShineTypewriter' ;
   color: white;
-  font-size: 1.6rem;
+  font-size: 1rem;
 }
 
 .image {
@@ -123,6 +123,7 @@
   flex-direction: row;
   max-width: 100%;
   min-width: 100%;
+  max-height: 50px;
 }
 
 .navBar {
@@ -130,7 +131,7 @@
   min-width: 100%;
   display: flex;
   justify-content: flex-end;
-  min-height: 35px;
+  min-height: 37px;
   max-width: 100%;
 }
 

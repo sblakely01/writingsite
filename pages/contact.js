@@ -124,18 +124,17 @@ export default function ContactUs() {
         </div>
         </div>
         <div className={styles.navBar}>
+        <div className={styles.textBarItems}>
         <Link href="/"> 
         <h3>Home</h3>
             </Link>
-              <div className={styles.navSpacer}></div>
               <Link href="/about"> 
         <h3>About</h3>
             </Link>
-              <div className={styles.navSpacer}></div>
               <Link href="/faq"> 
         <h3>FAQ</h3>
             </Link>
-              <div className={styles.navSpacer}></div>
+            </div>
               </div>
         <form onSubmit={handleSubmit} className={styles.form}>
             <div className={styles.formContainer}>

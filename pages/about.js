@@ -34,18 +34,17 @@ export default function About() {
         </div>
         </div>
         <div className={styles.navBar}>
+        <div className={styles.textBarItems}>
         <Link href="/contact"> 
           <h3>Contact</h3>
               </Link>
-              <div className={styles.navSpacer}></div>
               <Link href="/"> 
         <h3>Home</h3>
             </Link>
-              <div className={styles.navSpacer}></div>
               <Link href="/faq"> 
         <h3>FAQ</h3>
             </Link>
-              <div className={styles.navSpacer}></div>
+            </div>
               </div>
               <div className={styles.container}>
                 
