@@ -98,7 +98,7 @@ export default function ContactUs() {
       <div className={styles.container}>
         <Head>
           <title>Alt Nerd Noir</title>
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/Icon.png" />
         </Head>
   
   
@@ -112,15 +112,15 @@ export default function ContactUs() {
           </div>
   
         <div className={styles.navbarItemsRight}>
-        <a style={{width: '40px', height: '40px' }} href="https://nextjs.org/docs" >
+        <a style={{width: '40px', height: '40px' }} href="https://www.instagram.com/darkforestfae/" >
           <img style={{width: '25px', height: '25px' }} src="/instagram-logo.png"/>
               </a>
-        <a style={{width: '40px', height: '40px' }} href="https://nextjs.org/docs" >
+        <a style={{width: '40px', height: '40px' }} href="https://www.youtube.com/channel/UC-v2NjmUBcGwewxa5WwhMRw" >
           <img style={{width: '25px', height: '25px' }} src="/youtube.png"/>
               </a>
-        <a style={{width: '40px', height: '40px' }} href="https://nextjs.org/docs" >
+        {/* <a style={{width: '40px', height: '40px' }} href="https://nextjs.org/docs" >
           <img style={{width: '25px', height: '25px' }} src="/tik-tok.png"/>
-              </a>
+              </a> */}
         </div>
         </div>
         <div className={styles.navBar}>
@@ -131,9 +131,9 @@ export default function ContactUs() {
               <Link href="/about"> 
         <h3>About</h3>
             </Link>
-              <Link href="/faq"> 
+              {/* <Link href="/faq"> 
         <h3>FAQ</h3>
-            </Link>
+            </Link> */}
             </div>
               </div>
         <form onSubmit={handleSubmit} className={styles.form}>

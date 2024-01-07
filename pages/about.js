@@ -8,7 +8,7 @@ export default function About() {
       <div className={styles.container}>
         <Head>
           <title>Alt Nerd Noir</title>
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/Icon.png" />
         </Head>
   
   
@@ -22,15 +22,15 @@ export default function About() {
           </div>
   
         <div className={styles.navbarItemsRight}>
-        <a style={{width: '40px', height: '40px' }} href="https://nextjs.org/docs" >
+        <a style={{width: '40px', height: '40px' }} href="https://www.instagram.com/darkforestfae/" >
           <img style={{width: '25px', height: '25px' }} src="/instagram-logo.png"/>
               </a>
-        <a style={{width: '40px', height: '40px' }} href="https://nextjs.org/docs" >
+        <a style={{width: '40px', height: '40px' }} href="https://www.youtube.com/channel/UC-v2NjmUBcGwewxa5WwhMRw" >
           <img style={{width: '25px', height: '25px' }} src="/youtube.png"/>
               </a>
-        <a style={{width: '40px', height: '40px' }} href="https://nextjs.org/docs" >
+        {/* <a style={{width: '40px', height: '40px' }} href="https://nextjs.org/docs" >
           <img style={{width: '25px', height: '25px' }} src="/tik-tok.png"/>
-              </a>
+              </a> */}
         </div>
         </div>
         <div className={styles.navBar}>
@@ -41,9 +41,9 @@ export default function About() {
               <Link href="/"> 
         <h3>Home</h3>
             </Link>
-              <Link href="/faq"> 
+              {/* <Link href="/faq"> 
         <h3>FAQ</h3>
-            </Link>
+            </Link> */}
             </div>
               </div>
               <div className={styles.container}>
@@ -61,14 +61,8 @@ export default function About() {
               }}
   onInit={(typewriter) => {
     typewriter.typeString('On a cloudy September night in a hospital in Landstuhl, Germany that sat in the shadow of Nanstein Castle, a child was born...')
-      .callFunction(() => {
-        console.log('String typed out!');
-      })
       .pauseFor(2500)
       .deleteAll()
-      .callFunction(() => {
-        console.log('All strings were deleted');
-      })
       .start();
   }}
 />
@@ -81,12 +75,12 @@ export default function About() {
 
                         <p>For years afterwards, I struggled to take on any more ambitious writing projects, but I still felt drawn to writing, fiction, and fantasy. I began to learn to 
                         program in Ruby to build indie games in order to have a different medium for telling stories. I excelled in all of my literature and writing classes and was encouraged
-                        by teachers and family to enter into contests and to continue writing even if it was just short stories. In high school, I had several poems that were published in
+                        by teachers and family to enter into contests and to continue writing even if it was just short stories. In high school, I had several relatively dark poems that were published in
                         an anthology book, but it was years later - armed with a myriad of life experiences - before I finally felt the strong call to write regularly again.</p>
 
                         <p>On my 30th birthday, someone close to me who knew that I was struggling with the thought that I was too old to switch into doing what I loved bought me two books -
-                        Why I Write by George Orwell and On Writing: A Memoir of the Craft by Stephen King. Aside from my already having been a fan of both authors, after reading both books, I realized that
-                        both of them didn't have much traction to their writing careers until their 30s also and this helped me significantly to realize that when it comes to your calling 
+                        Why I Write by George Orwell and On Writing: A Memoir of the Craft by Stephen King. I realized after reading both books that
+                        both Orwell and King didn't have much traction to their writing careers until their 30's also and this helped me significantly to realize that when it comes to your calling 
                         in life, there is no such thing as "too late".</p>
 
                         <p>Today, I write regularly and also find other ways to tell stories through my AI art, indie game development, and even my website and application design as a 
