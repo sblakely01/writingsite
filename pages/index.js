@@ -24,6 +24,9 @@ export default function Home() {
         </div>
 
       <div className={styles.navbarItemsRight}>
+      <a style={{width: '40px', height: '40px' }} href="https://www.etsy.com/shop/VelvetVeilDecor?ref=seller-platform-mcnav" >
+          <img style={{width: '25px', height: '25px' }} src="/etsy.png"/>
+              </a>
       <a style={{width: '40px', height: '40px' }} href="https://www.instagram.com/darkforestfae/" >
           <img style={{width: '25px', height: '25px' }} src="/instagram-logo.png"/>
               </a>
@@ -134,15 +137,8 @@ export default function Home() {
       </main>
 
       <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a>
-      </footer>
+
+</footer>
 
       <style jsx>{`
         main {

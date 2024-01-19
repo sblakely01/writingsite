@@ -30,6 +30,9 @@ export default function AIArtGallery() {
           </div>
   
         <div className={styles.navbarItemsRight}>
+        <a style={{width: '40px', height: '40px' }} href="https://www.etsy.com/shop/VelvetVeilDecor?ref=seller-platform-mcnav" >
+          <img style={{width: '25px', height: '25px' }} src="/etsy.png"/>
+              </a>
         <a style={{width: '40px', height: '40px' }} href="https://www.instagram.com/darkforestfae/" >
           <img style={{width: '25px', height: '25px' }} src="/instagram-logo.png"/>
               </a>
@@ -116,19 +119,22 @@ export default function AIArtGallery() {
               src="https://i.ibb.co/VYmwKk8/image-2023-12-30-T013105-776.png"
             />
           </a>
+          <a
+            className="gallery-item"
+            data-src="https://i.ibb.co/2FyTnVt/Upscaled-Image6.png"
+            data-sub-html="<h4>Commision</h4>"
+          >
+            <img
+              className="img-responsive"
+              src="https://i.ibb.co/X5NPWj3/Upscaled-Image6-Thumb.png"
+            />
+          </a>
         </LightGallery>
               </div>
               </main>
 
               <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a>
+          
       </footer>
 
       <style jsx>{`
