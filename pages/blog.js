@@ -30,22 +30,31 @@ export default function Iridis() {
         <a style={{width: '40px', height: '40px' }} href="https://www.youtube.com/channel/UC-v2NjmUBcGwewxa5WwhMRw" >
           <img style={{width: '25px', height: '25px' }} src="/youtube.png"/>
               </a>
+              <a style={{width: '40px', height: '40px' }} href="https://cash.app/$altnerdnoir" >
+          <img style={{width: '25px', height: '25px' }} src="/cashapp.png"/>
+              </a>
         {/* <a style={{width: '40px', height: '40px' }} href="https://nextjs.org/docs" >
           <img style={{width: '25px', height: '25px' }} src="/tik-tok.png"/>
               </a> */}
         </div>
         </div>
         <div className={styles.navBar}>
+        <div className={styles.textBar}>
         <div className={styles.textBarItems}>
         <Link href="/"> 
         <h3>Home</h3>
             </Link>
+            </div>          
+            <div className={styles.textBarItems}>
         <Link href="/contact"> 
           <h3>Contact</h3>
               </Link>
+              </div>          
+              <div className={styles.textBarItems}>
               <Link href="/about"> 
         <h3>About</h3>
             </Link>
+            </div>
               {/* <Link href="/faq"> 
         <h3>FAQ</h3>
             </Link> */}
