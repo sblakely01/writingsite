@@ -1,70 +1,99 @@
 import Head from 'next/head';
-import styles from '../styles/About.module.css';
+import styles from '../styles/Iridis.module.css';
 import Link from 'next/link';
 
 export default function Iridis() {
-    return (
-      <div className={styles.container}>
-        <Head>
-          <title>Alt Nerd Noir</title>
-          <link rel="icon" href="/Icon.png" />
-        </Head>
-  
-  
-        <main className={styles.main}>
+  return (
+    <div className={styles.container}>
+      <Head>
+        <title>Alt Nerd Noir</title>
+        <link rel="icon" href="/Icon.png" />
+      </Head>
+
+
+      <main className={styles.main}>
         <div className={styles.toolBar}>
           <div className={styles.navbarItems}>
-          <p className={styles.title}>
+            <p className={styles.title}>
               Alt Nerd Noir
             </p>
-          <img src="/Icon.png"/>
+            <img src="/Icon.png" />
           </div>
-  
-        <div className={styles.navbarItemsRight}>
-        <a style={{width: '40px', height: '40px' }} href="https://www.instagram.com/darkforestfae/" >
-          <img style={{width: '25px', height: '25px' }} src="/instagram-logo.png"/>
-              </a>
-        <a style={{width: '40px', height: '40px' }} href="https://www.youtube.com/channel/UC-v2NjmUBcGwewxa5WwhMRw" >
-          <img style={{width: '25px', height: '25px' }} src="/youtube.png"/>
-              </a>
-        {/* <a style={{width: '40px', height: '40px' }} href="https://nextjs.org/docs" >
+
+          <div className={styles.navbarItemsRight}>
+            <a style={{ width: '40px', height: '40px' }} href="https://substack.com/@persephonenoir" >
+              <img style={{ width: '25px', height: '25px' }} src="/substack-3fcbaa60.png" />
+            </a>
+            <a style={{ width: '40px', height: '40px' }} href="https://www.etsy.com/shop/VelvetVeilDecor?ref=seller-platform-mcnav" >
+              <img style={{ width: '25px', height: '25px' }} src="/etsy.png" />
+            </a>
+            <a style={{ width: '40px', height: '40px' }} href="https://www.instagram.com/darkforestfae/" >
+              <img style={{ width: '25px', height: '25px' }} src="/instagram-logo.png" />
+            </a>
+            <a style={{ width: '40px', height: '40px' }} href="https://www.youtube.com/channel/UC-v2NjmUBcGwewxa5WwhMRw" >
+              <img style={{ width: '25px', height: '25px' }} src="/youtube.png" />
+            </a>
+            <a style={{ width: '40px', height: '40px' }} href="https://cash.app/$altnerdnoir" >
+              <img style={{ width: '25px', height: '25px' }} src="/cashapp.png" />
+            </a>
+            {/* <a style={{width: '40px', height: '40px' }} href="https://nextjs.org/docs" >
           <img style={{width: '25px', height: '25px' }} src="/tik-tok.png"/>
               </a> */}
-        </div>
+          </div>
         </div>
         <div className={styles.navBar}>
-        <div className={styles.textBarItems}>
-        <Link href="/"> 
-        <h3>Home</h3>
-            </Link>
-        <Link href="/contact"> 
-          <h3>Contact</h3>
+          <div className={styles.textBar}>
+            <div className={styles.textBarItems}>
+              <Link href="/">
+                <h3>Home</h3>
               </Link>
-              <Link href="/about"> 
-        <h3>About</h3>
-            </Link>
-              {/* <Link href="/faq"> 
+            </div>
+            <div className={styles.textBarItems}>
+              <Link href="/contact">
+                <h3>Contact</h3>
+              </Link>
+            </div>
+            <div className={styles.textBarItems}>
+              <Link href="/about">
+                <h3>About</h3>
+              </Link>
+            </div>
+            {/* <Link href="/faq"> 
         <h3>FAQ</h3>
             </Link> */}
-            </div>
+          </div>
+        </div>
+        <div className={styles.aboutContainer}>
+          <p className={styles.header}>
+            <h3>Stories</h3>
+          </p>
+          <div className={styles.grid}>
+            <a
+              href="https://open.substack.com/pub/persephonenoir/p/rumern-the-shadows-quarry?r=3i1oh3&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true"
+              className={styles.card}
+            >
+              <div className={styles.cardText}>
               </div>
-              <div className={styles.aboutContainer}>
-                  <p className={styles.header}>
-                      Coming soon!
-                  </p>
-              </div>
+              <img
+                alt="Card background"
+                className="z-0 w-full h-full object-cover"
+                src="./Story1.jpg"
+                width={250} height={250}
+              />
+              <p>
+              Rumern's heart pounded in rhythm with the chaos around him as fires consumed Arun and invisible horrors wrought death and destruction from the placid blue skies above. Somewhere behind him, he heard a desperate scream that was abruptly cut short. The sudden fear that he would be next made his heart pound even harder but he was determined not to let it all end now. Not before he found Eugaila. He began to run faster.
+              </p>
+            </a>
 
-              </main>
 
-              <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a>
+
+          </div>
+        </div>
+
+      </main>
+
+      <footer>
+
       </footer>
 
       <style jsx>{`
@@ -133,6 +162,6 @@ export default function Iridis() {
           box-sizing: border-box;
         }
       `}</style>
-              </div>
-    )
+    </div>
+  )
 }

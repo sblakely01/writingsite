@@ -22,10 +22,13 @@ export default function About() {
           </div>
   
         <div className={styles.navbarItemsRight}>
-        <a style={{width: '40px', height: '40px' }} href="https://www.etsy.com/shop/VelvetVeilDecor?ref=seller-platform-mcnav" >
+        <a style={{width: '40px', height: '40px' }} href="https://substack.com/@persephonenoir" >
+          <img style={{width: '25px', height: '25px' }} src="/substack-3fcbaa60.png"/>
+              </a>
+      <a style={{width: '40px', height: '40px' }} href="https://www.etsy.com/shop/VelvetVeilDecor?ref=seller-platform-mcnav" >
           <img style={{width: '25px', height: '25px' }} src="/etsy.png"/>
               </a>
-        <a style={{width: '40px', height: '40px' }} href="https://www.instagram.com/darkforestfae/" >
+      <a style={{width: '40px', height: '40px' }} href="https://www.instagram.com/darkforestfae/" >
           <img style={{width: '25px', height: '25px' }} src="/instagram-logo.png"/>
               </a>
         <a style={{width: '40px', height: '40px' }} href="https://www.youtube.com/channel/UC-v2NjmUBcGwewxa5WwhMRw" >
@@ -60,9 +63,9 @@ export default function About() {
                 
                 
                 <div className={styles.container}>
-                    <div className={styles.aboutPhoto}>
+                    {/* <div className={styles.aboutPhoto}>
                         <img src="./20231215_144434-resize.jpg" />
-                    </div>
+                    </div> */}
                     <div>
                     <div className={styles.aboutContainer}>
                     <Typewriter

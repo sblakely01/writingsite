@@ -30,10 +30,13 @@ export default function AIArtGallery() {
           </div>
   
         <div className={styles.navbarItemsRight}>
-        <a style={{width: '40px', height: '40px' }} href="https://www.etsy.com/shop/VelvetVeilDecor?ref=seller-platform-mcnav" >
+        <a style={{width: '40px', height: '40px' }} href="https://substack.com/@persephonenoir" >
+          <img style={{width: '25px', height: '25px' }} src="/substack-3fcbaa60.png"/>
+              </a>
+      <a style={{width: '40px', height: '40px' }} href="https://www.etsy.com/shop/VelvetVeilDecor?ref=seller-platform-mcnav" >
           <img style={{width: '25px', height: '25px' }} src="/etsy.png"/>
               </a>
-        <a style={{width: '40px', height: '40px' }} href="https://www.instagram.com/darkforestfae/" >
+      <a style={{width: '40px', height: '40px' }} href="https://www.instagram.com/darkforestfae/" >
           <img style={{width: '25px', height: '25px' }} src="/instagram-logo.png"/>
               </a>
         <a style={{width: '40px', height: '40px' }} href="https://www.youtube.com/channel/UC-v2NjmUBcGwewxa5WwhMRw" >
@@ -78,6 +81,56 @@ export default function AIArtGallery() {
           speed={500}
           plugins={[lgThumbnail, lgZoom]}
         >
+                                                            <a
+            className="gallery-item"
+            data-src="https://i.ibb.co/8NHqYKq/image-2024-06-02-T233358-813.png"
+            data-sub-html="<h4>Commision </h4>"
+          >
+            <img
+              className="img-responsive"
+              src="https://i.ibb.co/7nNtnQt/image-2024-06-02-T233358-813.png"
+            />
+          </a>
+                                                  <a
+            className="gallery-item"
+            data-src="https://i.ibb.co/34STMF1/image-2024-05-24-T173455-551.png"
+            data-sub-html="<h4>Commision </h4>"
+          >
+            <img
+              className="img-responsive"
+              src="https://i.ibb.co/LP8fhDQ/image-2024-05-24-T173455-551.png"
+            />
+          </a>
+                                        <a
+            className="gallery-item"
+            data-src="https://i.ibb.co/tQ3w3Gh/image-2024-02-02-T035351-851.png"
+            data-sub-html="<h4>Commision </h4>"
+          >
+            <img
+              className="img-responsive"
+              src="https://i.ibb.co/QK3H53C/image-2024-02-02-T035351-851.png"
+            />
+          </a>
+                              <a
+            className="gallery-item"
+            data-src="https://i.ibb.co/5xFTXmc/image-2024-04-25-T213305-085.png"
+            data-sub-html="<h4>Commision </h4>"
+          >
+            <img
+              className="img-responsive"
+              src="https://i.ibb.co/HxgtpK2/image-2024-04-25-T213305-085.png"
+            />
+          </a>
+                    <a
+            className="gallery-item"
+            data-src="https://i.ibb.co/bb0tXhP/image-2024-01-10-T234834-589.png"
+            data-sub-html="<h4>Commision </h4>"
+          >
+            <img
+              className="img-responsive"
+              src="https://i.ibb.co/RbWYHRk/image-2024-01-10-T234834-589.png"
+            />
+          </a>
           <a
             className="gallery-item"
             data-src="https://i.ibb.co/9nRB6gm/image-2023-12-25-T233803-769.png"
