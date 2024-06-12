@@ -18,7 +18,7 @@ export default function About() {
           <p className={styles.title}>
               Alt Nerd Noir
             </p>
-          <img src="/Icon.png"/>
+          <img style={{width: '45px', height: '45px' }} src="/Icon.png"/>
           </div>
   
         <div className={styles.navbarItemsRight}>

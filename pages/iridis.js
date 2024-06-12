@@ -17,7 +17,7 @@ export default function Iridis() {
             <p className={styles.title}>
               Alt Nerd Noir
             </p>
-            <img src="/Icon.png" />
+            <img style={{width: '45px', height: '45px' }} src="/Icon.png" />
           </div>
 
           <div className={styles.navbarItemsRight}>
@@ -81,7 +81,7 @@ export default function Iridis() {
                 width={250} height={250}
               />
               <p>
-              Rumern's heart pounded in rhythm with the chaos around him as fires consumed Arun and invisible horrors wrought death and destruction from the placid blue skies above. Somewhere behind him, he heard a desperate scream that was abruptly cut short. The sudden fear that he would be next made his heart pound even harder but he was determined not to let it all end now. Not before he found Eugaila. He began to run faster.
+              Rumern's heart pounded in rhythm with the chaos around him as fires consumed Arun and invisible horrors wrought death and destruction from the placid blue skies above...
               </p>
             </a>
 
